@@ -1,0 +1,14 @@
+.idea/*
+MyCache.iml
+build/
+masternode/build
+masternode/log
+masternode/api.iml
+masternode/masternode.iml
+datanode/build
+datanode/log
+datanode/client.iml
+client/build
+client/log
+client/client.iml
+out/

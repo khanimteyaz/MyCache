@@ -1,0 +1,8 @@
+rootProject.name = 'MyCache'
+
+include 'masternode'
+include 'datanode'
+include 'client'
+include 'masternode/api'
+rootProject.children.find { it.name == 'masternode/api' }.name = 'api'
+
