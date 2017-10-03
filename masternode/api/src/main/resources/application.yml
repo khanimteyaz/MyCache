@@ -3,4 +3,4 @@ server:
 logging:
   level:
     org.springframework: DEBUG
-  file: ¸
+  file: /Users/imteyaz.khan/resources/dev_sandbox/MyCache/masternode/log/myapplication.log

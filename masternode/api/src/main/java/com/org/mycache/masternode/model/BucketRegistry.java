@@ -43,10 +43,6 @@ public class BucketRegistry {
 
     public void addBucket(Bucket bucket) {
         checkNotNull(bucket);
-        if(registeredBuckets.contains(bucket)) {
-            registeredBuckets.get(registeredBuckets.indexOf(bucket)).touch();
-            return;
-        }
         synchronized (registeredBuckets) {
             registeredBuckets.add(new RegisteredBucket(bucket,System.currentTimeMillis()));
             sortBuckets();
@@ -64,6 +60,18 @@ public class BucketRegistry {
             sortBuckets();
             clusterVersion.incrementAndGet();
         }
+    }
+
+    public void touch(Bucket bucket) {
+        checkNotNull(bucket);
+        if(registeredBuckets.contains(bucket)) {
+            registeredBuckets.get(registeredBuckets.indexOf(bucket)).touch();
+        }
+    }
+
+    public boolean isPresent(Bucket bucket) {
+        checkNotNull(bucket);
+        return registeredBuckets.contains(new RegisteredBucket(bucket,System.currentTimeMillis()));
     }
 
     @PostConstruct
