@@ -4,7 +4,7 @@ package com.org.mycache.masternode.controller;
  * Created by imteyaz.khan on 01/10/17.
  */
 
-import com.org.mycache.masternode.model.Bucket;
+import com.org.mycache.core.model.node.Bucket;
 import com.org.mycache.masternode.model.ClusterInfo;
 import com.org.mycache.masternode.service.MasterClusterService;
 import lombok.extern.slf4j.Slf4j;

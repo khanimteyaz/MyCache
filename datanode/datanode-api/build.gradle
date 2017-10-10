@@ -60,8 +60,9 @@ integrationTest {
     }
 }
 
-//check.dependsOn integrationTest
-//integrationTest.mustRunAfter test
-bootRun {
-    systemProperties
-}
+check.dependsOn integrationTest
+integrationTest.mustRunAfter test
+bootRepackage.enabled=false
+//bootRun {
+//    systemProperties
+//}

@@ -1,14 +1,16 @@
 rootProject.name = 'MyCache'
 
+include 'core'
 include 'masternode'
 include 'datanode'
 include 'client'
-include 'masternode/master-api'
 include 'datanode/datanode-api'
+include 'masternode/master-api'
+
 rootProject.children.find { it.name == 'masternode/master-api' }.name = 'master-api'
 
 include 'datanode/datanode-api'
 rootProject.children.find { it.name == 'datanode/datanode-api' }.name = 'datanode-api'
 
-include 'core'
+
 
