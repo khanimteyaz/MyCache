@@ -1,7 +1,7 @@
 package com.org.mycache.masternode.service;
 
 import com.org.mycache.core.model.node.Bucket;
-import com.org.mycache.masternode.model.ClusterInfo;
+import com.org.mycache.core.model.node.ClusterInfo;
 
 /**
  * Created by imteyaz.khan on 01/10/17.

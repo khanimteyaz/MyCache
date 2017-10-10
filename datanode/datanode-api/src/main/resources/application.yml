@@ -4,3 +4,6 @@ logging:
   level:
     org.springframework: DEBUG
   file: /Users/imteyaz.khan/resources/dev_sandbox/MyCache/datanode/log/myapplication.log
+datanode:
+  id: 105
+  masterUrl: http://localhost:7001

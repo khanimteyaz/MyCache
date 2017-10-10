@@ -62,7 +62,7 @@ integrationTest {
 
 check.dependsOn integrationTest
 integrationTest.mustRunAfter test
-bootRepackage.enabled=false
-//bootRun {
-//    systemProperties
-//}
+bootRepackage.enabled=true
+bootRun {
+    systemProperties
+}

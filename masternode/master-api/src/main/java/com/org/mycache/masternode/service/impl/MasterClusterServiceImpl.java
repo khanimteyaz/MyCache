@@ -1,12 +1,12 @@
 package com.org.mycache.masternode.service.impl;
 
 import com.org.mycache.core.model.node.Bucket;
+import com.org.mycache.core.model.node.ClusterInfo;
 import com.org.mycache.masternode.event.ClusterEvent;
 import com.org.mycache.masternode.event.ClusterEventType;
 import com.org.mycache.masternode.event.NodeEvent;
 import com.org.mycache.masternode.event.eventbus.MyCacheEventBus;
 import com.org.mycache.masternode.model.BucketRegistry;
-import com.org.mycache.masternode.model.ClusterInfo;
 import com.org.mycache.masternode.model.RegisteredBucket;
 import com.org.mycache.masternode.service.MasterClusterService;
 import lombok.extern.slf4j.Slf4j;

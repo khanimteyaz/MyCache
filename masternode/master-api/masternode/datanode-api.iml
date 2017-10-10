@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":datanode-api" external.linked.project.path="$MODULE_DIR$/../../../datanode/datanode-api" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="mycache" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web Gradle : datanode-api-1.0.0.war">
+      <configuration>
+        <webroots>
+          <root url="file://$MODULE_DIR$/../../../datanode/datanode-api/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/../../../datanode/datanode-api/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../../datanode/datanode-api/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/../../../datanode/datanode-api/build/classes/main" />
     <output-test url="file://$MODULE_DIR$/../../../datanode/datanode-api/build/classes/test" />

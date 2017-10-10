@@ -5,7 +5,7 @@ package com.org.mycache.masternode.controller;
  */
 
 import com.org.mycache.core.model.node.Bucket;
-import com.org.mycache.masternode.model.ClusterInfo;
+import com.org.mycache.core.model.node.ClusterInfo;
 import com.org.mycache.masternode.service.MasterClusterService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

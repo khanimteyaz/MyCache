@@ -1,6 +1,5 @@
-package com.org.mycache.masternode.model;
+package com.org.mycache.core.model.node;
 
-import com.org.mycache.core.model.node.Bucket;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

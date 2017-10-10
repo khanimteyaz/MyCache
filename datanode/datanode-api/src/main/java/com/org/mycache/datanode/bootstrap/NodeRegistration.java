@@ -5,6 +5,7 @@ import static com.org.mycache.core.http.HttpRemoteUtil.defaultHeaders;
 
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.org.mycache.core.model.node.Bucket;
+import com.org.mycache.core.model.node.ClusterInfo;
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -31,10 +32,10 @@ public class NodeRegistration {
     @PostConstruct
     public void registerWithMaster() throws UnirestException {
         Bucket bucket=new Bucket(id,this.selfIp,this.selfPort);
-        post(getBucketRegistionUrl(), Bucket.class, Bucket.class, bucket, null, defaultHeaders());
+        post(getBucketRegistrationUrl(), ClusterInfo.class, Bucket.class, bucket, null, defaultHeaders());
     }
 
-    private String getBucketRegistionUrl() {
+    private String getBucketRegistrationUrl() {
         return new StringBuilder(this.masterUrl).append(MASTER_NODE_REGISTRATION_CONTEXT_PATH).toString();
     }
 }
