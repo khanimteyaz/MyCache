@@ -35,6 +35,6 @@ public class NodeRegistration {
     }
 
     private String getBucketRegistionUrl() {
-        return new StringBuilder(this.id).append(MASTER_NODE_REGISTRATION_CONTEXT_PATH).toString();
+        return new StringBuilder(this.masterUrl).append(MASTER_NODE_REGISTRATION_CONTEXT_PATH).toString();
     }
 }
