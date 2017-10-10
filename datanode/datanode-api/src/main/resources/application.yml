@@ -1,0 +1,6 @@
+server:
+  port: 9001
+logging:
+  level:
+    org.springframework: DEBUG
+  file: /Users/imteyaz.khan/resources/dev_sandbox/MyCache/datanode/log/myapplication.log
